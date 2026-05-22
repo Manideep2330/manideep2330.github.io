@@ -1,6 +1,8 @@
-# Bingi Chanikya Venkata Manideep Portfolio
+# Product & Analytics Portfolio
 
-Version 1 of a clean, recruiter-friendly GitHub Pages portfolio for Product Analyst, Technical Product Manager, Project Manager, Product Owner, Business Analyst, Technical Customer Success Manager, Healthcare Product Analyst, and Healthcare IT Project Manager roles.
+A polished, recruiter-friendly GitHub Pages portfolio for Technical Product Manager, Product Analyst, Project Manager, Business Analyst, Customer Success, and Implementation Specialist roles.
+
+The site is designed to feel like a modern SaaS/product-management portfolio rather than a beginner developer portfolio. It emphasizes product coordination, healthcare analytics, Jira workflows, dashboard reporting, implementation support, and cross-functional delivery.
 
 ## Tech Stack
 
@@ -9,7 +11,7 @@ Version 1 of a clean, recruiter-friendly GitHub Pages portfolio for Product Anal
 - Minimal JavaScript
 - GitHub Pages
 
-No React, Next.js, Tailwind, Bootstrap, or build tools are required.
+No React, Next.js, Tailwind, Bootstrap, backend code, or build tools are required.
 
 ## File Structure
 
@@ -40,6 +42,8 @@ Then visit:
 http://localhost:8000
 ```
 
+You can also open `index.html` directly in a browser because this is a fully static site.
+
 ## How to Update `resume.pdf`
 
 1. Export the latest resume as `resume.pdf`.
@@ -65,7 +69,40 @@ Update either link wherever it appears in the Hero and Contact sections.
 
 ## How to Deploy with GitHub Pages
 
-1. Push the files to the `main` branch of `Manideep2330/manideep2330.github.io`.
+1. Commit changes locally.
+2. Push the files to the `main` branch of `Manideep2330/manideep2330.github.io`.
+3. Go to GitHub repository settings.
+4. Open Pages.
+5. Set the source to deploy from the `main` branch and root folder.
+6. Save the settings.
+7. Visit `https://manideep2330.github.io` after GitHub finishes publishing.
+
+Typical publish commands:
+
+```bash
+git add index.html style.css script.js README.md resume.pdf
+git commit -m "Redesign portfolio website"
+git push origin main
+```
+
+## Sections
+
+The portfolio includes:
+
+- Hero with product dashboard-style visual
+- Quick value proposition
+- Featured case-study cards
+- Experience highlights
+- Grouped skills
+- Resume call to action
+- Education and certifications
+- Contact section
+
+## Maintenance Notes
+
+- Keep project metrics honest and only add exact numbers when they are verified.
+- Replace placeholder case-study links when dedicated project pages or repositories exist.
+- Replace the LinkedIn placeholder once the final LinkedIn URL is available.
 2. Go to GitHub repository settings.
 3. Open Pages.
 4. Set the source to deploy from the `main` branch and root folder.

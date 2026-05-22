@@ -1,8 +1,14 @@
-// Handles the mobile menu without adding a framework or build step.
+// Keeps the mobile navigation accessible without adding dependencies.
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 
 if (navToggle && navLinks) {
+  const closeMenu = () => {
+    navToggle.setAttribute("aria-expanded", "false");
+    navLinks.classList.remove("is-open");
+    document.body.classList.remove("nav-open");
+  };
+
   navToggle.addEventListener("click", () => {
     const isOpen = navToggle.getAttribute("aria-expanded") === "true";
     navToggle.setAttribute("aria-expanded", String(!isOpen));
@@ -12,9 +18,13 @@ if (navToggle && navLinks) {
 
   navLinks.addEventListener("click", (event) => {
     if (event.target instanceof HTMLAnchorElement) {
-      navToggle.setAttribute("aria-expanded", "false");
-      navLinks.classList.remove("is-open");
-      document.body.classList.remove("nav-open");
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
     }
   });
 }
