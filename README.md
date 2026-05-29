@@ -40,11 +40,11 @@ python -m http.server 8000
 
 - Hero with bento-grid impact metrics (20%, 500+, 30%, 40%)
 - Trust strip of daily tools (Power BI, Tableau, SQL, JIRA, ...)
-- Value proposition (translate / make visible / support delivery)
+- Value proposition (translate / make visible / support delivery and adoption)
 - About + quick-facts panel
 - Featured case studies (4 projects)
 - Experience timeline (Hines & Associates, Detect Technologies)
-- Skills grouped into 6 cards (PM, Project, Data, Healthcare, Tech, AI)
+- Skills grouped into 7 cards (PM, Project, Data, Healthcare, Customer Success, Tech, AI)
 - Education + certifications
 - Resume download CTA
 - Contact (email, phone, LinkedIn, GitHub, location)
