@@ -56,7 +56,7 @@
 
   /* ---------- Reveal on scroll ---------- */
   const revealTargets = document.querySelectorAll(
-    ".section, .value-card, .project-card, .experience-card, .skill-card, .credential-card, .metric-tile"
+    ".section-heading, .value-card, .project-card, .experience-card, .skill-card, .credential-card, .metric-tile"
   );
 
   if ("IntersectionObserver" in window && revealTargets.length) {

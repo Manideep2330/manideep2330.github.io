@@ -1,93 +1,34 @@
-# Bingi Chanikya Venkata Manideep — Product & Analytics Portfolio
+# Bingi Chanikya Venkata Manideep — Program Management Portfolio
 
-A modern, single-file static portfolio for Technical Product Manager, Product Analyst, Product Owner, Customer Success Manager, and Implementation Specialist roles.
+Personal portfolio for Program Manager, Project Manager, and Project Coordinator opportunities, published at https://manideep2330.github.io/.
 
-The design is a "product cockpit" — a bento-grid hero showing real impact metrics, calm typography, and recruiter-friendly case studies. Built deliberately to feel like a SaaS / product workspace, not a beginner developer page.
+## Content
 
-## Tech Stack
+- Program Manager introduction focused on cross-functional delivery and process improvement.
+- Delivery metrics: 20+ deployments, 500+ enterprise clients, 30% fewer recurring incidents, and 15+ reporting hours saved monthly. The Detect case study also includes a 20% reduction in onboarding cycle time.
+- Three case studies: enterprise deployment and onboarding at Detect Technologies, plus two academic projects covering risk/continuity planning and emissions analysis.
+- Complete work history: 14 responsibilities for Project Coordinator at Softech Technology Group, Inc., and 12 for Jr Product Manager / Coordinator at Detect Technologies.
+- All 37 resume skills across five categories.
+- Two completed degrees and current contact details.
+- The approved Program Manager resume, linked from all three download buttons.
 
-- HTML (`index.html`)
-- CSS with custom properties (`style.css`)
-- A small, dependency-free JS file (`script.js`) for mobile nav, scroll reveals, sticky header
-- Inter + JetBrains Mono via Google Fonts
-- Deployed on GitHub Pages
+## Files and local preview
 
-No build tools, frameworks, or backend.
+- `index.html`: content and semantic page structure.
+- `style.css`: cream/teal theme, cards, typography, and responsive layouts.
+- `script.js`: mobile navigation, sticky header, scroll reveals, and footer year.
+- `resume.pdf`: current public download; keep this filename when replacing it.
 
-## File Structure
+The site uses plain HTML, CSS, and JavaScript with Inter and JetBrains Mono from Google Fonts. No build step or dependencies are required.
 
-```text
-manideep2330.github.io/
-|-- index.html        # All page content + structure
-|-- style.css         # Design tokens, layout, components, responsive rules
-|-- script.js         # Nav, scroll reveals, sticky header, year
-|-- resume.pdf        # Linked from the Download Resume buttons
-`-- README.md
-```
+To preview locally, run `python -m http.server 8000 --bind 127.0.0.1` in this directory and open http://127.0.0.1:8000/.
 
-`resume.pdf` lives at the repo root so the "Download resume" buttons resolve correctly.
+## Publishing
 
-## How to Run Locally
+Review changes, commit the specific updated files, and push `main` to `Manideep2330/manideep2330.github.io`. GitHub Pages publishes the branch automatically.
 
-Open `index.html` directly in any modern browser, or serve it:
+When changing a profile detail, also check the page metadata, hero, About, work history, skills, contact information, and resume download for consistency. Keep academic work identified as academic and do not label planned training as a completed qualification.
 
-```bash
-python -m http.server 8000
-# then visit http://localhost:8000
-```
+## Accessibility
 
-## Sections
-
-- Hero with bento-grid impact metrics (20%, 500+, 30%, 40%)
-- Trust strip of daily tools (Power BI, Tableau, SQL, JIRA, ...)
-- Value proposition (translate / make visible / support delivery and adoption)
-- About + quick-facts panel
-- Featured case studies (4 projects)
-- Experience timeline (Hines & Associates, Detect Technologies)
-- Skills grouped into 7 cards (PM, Project, Data, Healthcare, Customer Success, Tech, AI)
-- Education + certifications
-- Resume download CTA
-- Contact (email, phone, LinkedIn, GitHub, location)
-
-## Updating Content
-
-- **Resume PDF** — replace `resume.pdf` at the repo root. Keep the filename exact.
-- **Metrics** — edit the four `.metric-tile` blocks in `index.html` under the Hero.
-- **Projects** — edit the `<article class="project-card">` blocks under `<section id="projects">`.
-- **Experience** — edit the `<article class="experience-card">` blocks under `<section id="experience">`.
-- **Contact details** — bottom of `index.html`, inside `<ul class="contact-links">`.
-
-## Color & Type Tokens
-
-All colors and spacing live as CSS custom properties at the top of `style.css`:
-
-- Brand accent: `--accent: #0f6e56` (deep teal)
-- Metric ramps: `--teal-*`, `--blue-*`, `--purple-*`, `--amber-*`
-- Type scales clamp between mobile and desktop using `clamp()`
-
-## Deploying to GitHub Pages
-
-1. Commit changes locally.
-2. Push to the `main` branch of `Manideep2330/manideep2330.github.io`.
-3. GitHub Pages rebuilds automatically.
-4. Site is live at <https://manideep2330.github.io>.
-
-Typical publish flow:
-
-```bash
-git add .
-git commit -m "Redesign portfolio: product cockpit hero, bento metrics, six skill groups"
-git push origin main
-```
-
-## Accessibility & Performance
-
-- Skip-to-content link
-- Semantic landmarks (`<header>`, `<main>`, `<section>`, `<footer>`)
-- ARIA labels on nav, regions, and decorative elements
-- `prefers-reduced-motion` respected (animations disabled)
-- No frameworks, no images, no tracking — fast first paint
-
-## Browser Support
-
-Modern evergreen browsers (Chrome, Edge, Firefox, Safari). The layout uses CSS grid, custom properties, and `clamp()` — all widely supported since 2020.
+The site includes semantic landmarks, a skip link, keyboard-accessible navigation, visible native focus states, reduced-motion support, and responsive layouts. The identity and profile introduction appear before impact metrics on mobile. Content remains accessible without JavaScript.
